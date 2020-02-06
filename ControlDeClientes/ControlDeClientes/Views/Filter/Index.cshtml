@@ -1,0 +1,27 @@
+﻿@model ControlDeClientes.Models.FilterModel
+@{
+    ViewBag.Title = "Form";
+}
+
+<div class="container mt-4">
+    @using (Html.BeginForm())
+    {
+        <h2>Form</h2>
+        <form>
+            <div class="form-group">
+                @Html.LabelFor(model => model.TypeSort, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TypeSort, new { htmlAttributes = new { @class = "form-control", placeholder = "SortName Or SortLastName" } })
+                    @Html.ValidationMessageFor(model => model.TypeSort, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-primary btn-block" />
+            </div>
+
+        </form>
+    }
+</div>
+
+
+

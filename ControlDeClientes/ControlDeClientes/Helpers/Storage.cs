@@ -18,7 +18,9 @@ namespace ControlDeClientes.Helpers
                 return _instance;
             }
         }
+        public string Type;
         public List<ClientsModel> ClientsList = new List<ClientsModel>();
-
+        public List<ClientsModel> ClientsSortedByName = new List<ClientsModel>();
+        public List<ClientsModel> ClientsSortedByLastName = new List<ClientsModel>();
     }
 }

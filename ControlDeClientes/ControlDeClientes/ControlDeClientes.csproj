@@ -129,10 +129,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\FilterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Storage.cs" />
+    <Compile Include="Models\FilterModel.cs" />
     <Compile Include="Models\ClientsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -274,7 +276,9 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Clients\Index.cshtml" />
     <Content Include="Views\Clients\Create.cshtml" />
-    <Content Include="Views\Clients\ClientsFilter.cshtml" />
+    <Content Include="Views\Filter\Index.cshtml" />
+    <Content Include="Views\Filter\SortName.cshtml" />
+    <Content Include="Views\Filter\SortLastName.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

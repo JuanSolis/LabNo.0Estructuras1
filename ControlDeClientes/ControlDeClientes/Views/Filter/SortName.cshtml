@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<ControlDeClientes.Models.ClientsModel>
 
 @{
-    ViewBag.Title = "ClientsFilter";
+    ViewBag.Title = "SortName";
 }
 
-<h2>ClientsFilter</h2>
+<h2>SortName</h2>
 
-
+<p>
+    @Html.ActionLink("Back to Form", "Index")
+</p>
 <table class="table">
     <tr>
         <th>
@@ -38,6 +40,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Description)
         </td>
+
     </tr>
 }
 

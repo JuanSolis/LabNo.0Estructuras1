@@ -16,10 +16,7 @@ namespace ControlDeClientes.Controllers
             ViewBag.Message = "Welcome to Client Control Stage";
             return View(Storage.Instance.ClientsList);
         }
-        public ActionResult ClientsFilter()
-        {
-            return View(Storage.Instance.ClientsList);
-        }
+
         // GET: Clients/Details/5
         public ActionResult Details(int id)
         {
@@ -32,6 +29,8 @@ namespace ControlDeClientes.Controllers
             ViewBag.Message = "Welcome to Create Stage";
             return View();
         }
+
+       
 
         // POST: Clients/Create
         [HttpPost]
@@ -60,6 +59,8 @@ namespace ControlDeClientes.Controllers
                 return View();
             }
         }
+
+       
 
         // GET: Clients/Edit/5
         public ActionResult Edit(int id)
